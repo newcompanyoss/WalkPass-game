@@ -13,7 +13,7 @@ GitHub and/or other sites.
 
 https://github.com/newcompanyoss
 
-https://newcompanystore.itch.io/
+[https://newcompanystore.itch.io/](https://newcompanystore.itch.io/walk-pass)
 
 Original copy rights belong to New Company and
 the game's creator, SaifDeanAnYT
