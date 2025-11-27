@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://sprites/Walk Pass/Menus/arrow pixel.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Walk Pass Mobile.gd" type="Script" id=2]
+[ext_resource path="res://sprites/Walk Pass/Menus/pause.png" type="Texture" id=3]
+[ext_resource path="res://sprites/Walk Pass/Menus/arrow pixel pressed.png" type="Texture" id=4]
+[ext_resource path="res://sprites/Walk Pass/Menus/pause pressed.png" type="Texture" id=5]
+
+[node name="MobileControls" type="CanvasLayer" groups=["WalkPassMobile"]]
+pause_mode = 2
+layer = 0
+script = ExtResource( 2 )
+
+[node name="Up" type="TouchScreenButton" parent="."]
+position = Vector2( 144, 352 )
+scale = Vector2( 1.5, 1.5 )
+normal = ExtResource( 1 )
+pressed = ExtResource( 4 )
+action = "ui_up"
+
+[node name="Left" type="TouchScreenButton" parent="."]
+position = Vector2( 48, 560 )
+rotation = -1.57079
+scale = Vector2( 1.5, 1.5 )
+normal = ExtResource( 1 )
+pressed = ExtResource( 4 )
+action = "ui_left"
+
+[node name="Right" type="TouchScreenButton" parent="."]
+position = Vector2( 336, 464 )
+rotation = 1.5708
+scale = Vector2( 1.5, 1.5 )
+normal = ExtResource( 1 )
+pressed = ExtResource( 4 )
+action = "ui_right"
+
+[node name="Down" type="TouchScreenButton" parent="."]
+position = Vector2( 240, 672 )
+rotation = 3.14159
+scale = Vector2( 1.5, 1.5 )
+normal = ExtResource( 1 )
+pressed = ExtResource( 4 )
+action = "ui_down"
+
+[node name="Cancel" type="TouchScreenButton" parent="."]
+position = Vector2( 1.52588e-05, 0 )
+scale = Vector2( 1.5, 1.5 )
+normal = ExtResource( 3 )
+pressed = ExtResource( 5 )
+action = "ui_cancel"

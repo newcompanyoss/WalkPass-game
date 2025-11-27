@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://sprites/Walk Pass/Menus/exit.png" type="Texture" id=1]
+[ext_resource path="res://sprites/Walk Pass/Menus/next.png" type="Texture" id=2]
+[ext_resource path="res://sprites/Walk Pass/Menus/retry.png" type="Texture" id=3]
+[ext_resource path="res://sprites/Walk Pass/Walk Pass/Walk Priz Win.png" type="Texture" id=4]
+[ext_resource path="res://scripts/Walk Priz Win4.gd" type="Script" id=5]
+
+[node name="Walk Priz Win4" type="CanvasLayer"]
+pause_mode = 2
+script = ExtResource( 5 )
+
+[node name="PassWallViolet" type="ColorRect" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+color = Color( 0.6, 0, 1, 0.509804 )
+
+[node name="Walk PrizWin4" type="Sprite" parent="."]
+position = Vector2( 672, 104 )
+scale = Vector2( 0.7, 0.688889 )
+texture = ExtResource( 4 )
+
+[node name="Walk Priz Win4" type="Control" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+
+[node name="Next" type="Button" parent="Walk Priz Win4"]
+margin_left = 560.0
+margin_top = 304.0
+margin_right = 752.0
+margin_bottom = 416.0
+keep_pressed_outside = true
+icon = ExtResource( 2 )
+flat = true
+expand_icon = true
+
+[node name="Retry" type="Button" parent="Walk Priz Win4"]
+margin_left = 560.0
+margin_top = 432.0
+margin_right = 752.0
+margin_bottom = 544.0
+icon = ExtResource( 3 )
+flat = true
+expand_icon = true
+
+[node name="Exit" type="Button" parent="Walk Priz Win4"]
+margin_left = 560.0
+margin_top = 560.0
+margin_right = 752.0
+margin_bottom = 672.0
+icon = ExtResource( 1 )
+flat = true
+expand_icon = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="pressed" from="Walk Priz Win4/Next" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="Walk Priz Win4/Next" to="." method="_on_Next_pressed"]
+[connection signal="pressed" from="Walk Priz Win4/Retry" to="." method="_on_Retry_pressed"]
+[connection signal="pressed" from="Walk Priz Win4/Exit" to="." method="_on_Exit_pressed"]

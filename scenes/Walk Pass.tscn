@@ -1,0 +1,159 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://sprites/Walk Pass/Menus/exit.png" type="Texture" id=1]
+[ext_resource path="res://sprites/Walk Pass/Menus/play.png" type="Texture" id=2]
+[ext_resource path="res://sprites/Pass Wall/passwall.png" type="Texture" id=3]
+[ext_resource path="res://scripts/Walk Pass.gd" type="Script" id=4]
+[ext_resource path="res://sprites/Walk Pass/Menus/settings.png" type="Texture" id=5]
+[ext_resource path="res://scenes/PlayerWalkPass.tscn" type="PackedScene" id=6]
+[ext_resource path="res://icon.png" type="Texture" id=7]
+[ext_resource path="res://fonts/Pixel.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://fonts/AtariSmall.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://sprites/Walk Pass/Walk Pass/1761867883437 (2).png" type="Texture" id=10]
+[ext_resource path="res://scenes/PasskeyWalkPass.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/Passdoor.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/TileMap.tres" type="TileSet" id=13]
+[ext_resource path="res://scenes/Wall PrizWalk Pass.tscn" type="PackedScene" id=14]
+
+[sub_resource type="DynamicFont" id=1]
+size = 41
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 62
+use_mipmaps = true
+extra_spacing_top = 3
+extra_spacing_bottom = 3
+extra_spacing_char = 3
+extra_spacing_space = 3
+font_data = ExtResource( 9 )
+
+[node name="Walk Pass" type="Control"]
+anchor_top = -0.044
+anchor_right = 0.425
+anchor_bottom = 0.444
+margin_left = 16.0
+margin_top = 31.68
+margin_right = -16.0
+margin_bottom = -15.68
+script = ExtResource( 4 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 13 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -1, 0, 0, -65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 0, 0, -65527, 0, 0, -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0, -65521, 0, 0, -65520, 0, 0, -65519, 0, 0, -65518, 0, 0, -65517, 0, 0, -65516, 0, 0, -65515, 0, 0, -65514, 0, 0, -65513, 0, 0, -65512, 0, 0, -65511, 0, 0, -65510, 0, 0, -65509, 0, 0, -65508, 0, 0, -65507, 0, 0, -65506, 0, 0, -65505, 0, 0, -65504, 0, 0, 65535, 0, 0, 32, 0, 0, 131071, 0, 0, 65568, 0, 0, 196607, 0, 0, 131104, 0, 0, 262143, 0, 0, 196640, 0, 0, 327679, 0, 0, 262176, 0, 0, 393215, 0, 0, 327712, 0, 0, 458751, 0, 0, 393248, 0, 0, 524287, 0, 0, 458784, 0, 0, 589823, 0, 0, 524320, 0, 0, 655359, 0, 0, 589856, 0, 0, 720895, 0, 0, 655392, 0, 0, 655393, 0, 0, 786431, 0, 0, 720928, 10, 0, 720930, 0, 0, 851967, 0, 0, 786464, 0, 0, 786465, 0, 0, 917503, 0, 0, 852000, 0, 0, 983039, 0, 0, 917536, 0, 0, 1048575, 0, 0, 983072, 0, 0, 1114111, 0, 0, 1048608, 0, 0, 1179647, 0, 0, 1114144, 0, 0, 1245183, 0, 0, 1179680, 0, 0, 1310719, 0, 0, 1245184, 0, 0, 1245185, 0, 0, 1245186, 0, 0, 1245187, 0, 0, 1245188, 0, 0, 1245189, 0, 0, 1245190, 0, 0, 1245191, 0, 0, 1245192, 0, 0, 1245193, 0, 0, 1245194, 0, 0, 1245195, 0, 0, 1245196, 0, 0, 1245197, 0, 0, 1245198, 0, 0, 1245199, 0, 0, 1245200, 0, 0, 1245201, 0, 0, 1245202, 0, 0, 1245203, 0, 0, 1245204, 0, 0, 1245205, 0, 0, 1245206, 0, 0, 1245207, 0, 0, 1245208, 0, 0, 1245209, 0, 0, 1245210, 0, 0, 1245211, 0, 0, 1245212, 0, 0, 1245213, 0, 0, 1245214, 0, 0, 1245215, 0, 0, 1245216, 0, 0 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+current = true
+zoom = Vector2( 0.4, 0.42 )
+
+[node name="Passwall" type="Sprite" parent="."]
+position = Vector2( 256, 152 )
+scale = Vector2( 0.4, 0.422222 )
+texture = ExtResource( 3 )
+
+[node name="Walk Pass" type="Sprite" parent="Passwall"]
+position = Vector2( 16, -184 )
+scale = Vector2( 0.814815, 0.745098 )
+texture = ExtResource( 10 )
+
+[node name="Icon" type="Sprite" parent="Passwall"]
+position = Vector2( -560, 296 )
+texture = ExtResource( 7 )
+
+[node name="WEW!!!" type="Label" parent="Passwall"]
+margin_left = 192.0
+margin_top = -184.0
+margin_right = 560.0
+margin_bottom = 104.0
+rect_rotation = -16.5663
+custom_fonts/font = SubResource( 1 )
+text = "WEW!!!"
+align = 1
+valign = 1
+
+[node name="1925" type="Label" parent="Passwall"]
+margin_left = 304.0
+margin_top = 152.0
+margin_right = 672.0
+margin_bottom = 440.0
+rect_rotation = -0.431457
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_fonts/font = SubResource( 2 )
+text = "©1925"
+align = 1
+valign = 1
+
+[node name="Play" type="Button" parent="Passwall"]
+margin_left = -80.0
+margin_top = -56.0
+margin_right = 112.0
+margin_bottom = 56.0
+icon = ExtResource( 2 )
+flat = true
+expand_icon = true
+
+[node name="Settings" type="Button" parent="Passwall"]
+margin_left = -80.0
+margin_top = 72.0
+margin_right = 112.0
+margin_bottom = 182.0
+icon = ExtResource( 5 )
+flat = true
+expand_icon = true
+
+[node name="Exit" type="Button" parent="Passwall"]
+margin_left = -80.0
+margin_top = 200.0
+margin_right = 112.0
+margin_bottom = 312.0
+icon = ExtResource( 1 )
+flat = true
+expand_icon = true
+
+[node name="Ver" type="Label" parent="."]
+visible = false
+margin_left = 384.0
+margin_top = 112.0
+margin_right = 752.0
+margin_bottom = 514.0
+rect_scale = Vector2( 0.325868, 0.394387 )
+custom_colors/font_color = Color( 0.988235, 1, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.262745, 1, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Walk Priz!!!
+(Win)
+
+New
+Walk Pass 1.0
+@SaifDeanAnYT
+Godot 3.5
+2025"
+align = 1
+valign = 1
+
+[node name="Wall PrizWalk Pass" parent="." instance=ExtResource( 14 )]
+position = Vector2( 528, 176 )
+scale = Vector2( 1.00588, 0.99439 )
+
+[node name="Passdoor" parent="." instance=ExtResource( 12 )]
+position = Vector2( 496, 176 )
+
+[node name="PasskeyWalkPass" parent="." instance=ExtResource( 11 )]
+position = Vector2( 263, 84 )
+scale = Vector2( 1, 1 )
+
+[node name="PlayerWalkPass" parent="." instance=ExtResource( 6 )]
+position = Vector2( 112, 160 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="pressed" from="Passwall/Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="Passwall/Settings" to="." method="_on_Settings_pressed"]
+[connection signal="pressed" from="Passwall/Exit" to="." method="_on_Exit_pressed"]

@@ -1,0 +1,11 @@
+yellow fff300
+rad ff0000
+orange ff7200
+green 43ff00
+green cyan 00ff9b
+blue 0094ff
+dark saturated blue 0021ff
+electric violet 9900ff
+pink ff00f3
+white ffffff
+black 000000
