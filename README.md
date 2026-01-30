@@ -1,4 +1,10 @@
-<img width="3840" height="2160" alt="kmc_20251126_220406" src="https://github.com/user-attachments/assets/277ff221-e124-4496-b8b2-dfed82b1d5a3" />
+<img width="3840" height="2160" alt="kmc_20260129_123911" src="https://github.com/user-attachments/assets/e6c6b319-9bfc-4695-a130-d13f890107fe" />
+<img width="3840" height="2160" alt="kmc_20260130_172639" src="https://github.com/user-attachments/assets/471fe8fb-c29f-4841-87a4-0627700d392d" />
+<img width="3840" height="2160" alt="kmc_20260130_172653" src="https://github.com/user-attachments/assets/acb6a451-2444-40f7-9979-16f96a3ddd7c" />
+<img width="3840" height="2160" alt="kmc_20260130_172712" src="https://github.com/user-attachments/assets/e9565a47-4029-48b7-9d47-8cde079362d4" />
+<img width="3840" height="2160" alt="kmc_20260130_172741" src="https://github.com/user-attachments/assets/48cae2ff-9d69-4cf3-82b6-f95c09c297a4" />
+<img width="3840" height="2160" alt="kmc_20260130_172748" src="https://github.com/user-attachments/assets/bd8f9a50-b533-4a7c-b50d-5a400fbdfc62" />
+<img width="3840" height="2160" alt="kmc_20260130_172807" src="https://github.com/user-attachments/assets/34d5e107-38a1-49f6-849e-967b0eedad14" />
 
 readme 1.1.txt
 ____________________________
@@ -25,9 +31,3 @@ Level12
 
 https://kenney-assets.itch.io/tiny-dungeon
 ____________________________
-<img width="3840" height="2160" alt="kmc_20251126_232654" src="https://github.com/user-attachments/assets/1e8618f0-c6bd-4edc-9b9c-729582caeb10" />
-<img width="3840" height="2160" alt="kmc_20251126_232704" src="https://github.com/user-attachments/assets/249bd2cc-ae6f-4852-95f8-b31a1ac3911e" />
-<img width="3840" height="2160" alt="kmc_20251126_232717" src="https://github.com/user-attachments/assets/87b043d7-4e80-4998-861a-855e69a5393f" />
-<img width="3840" height="2160" alt="kmc_20251126_232727" src="https://github.com/user-attachments/assets/0d485ada-30b8-42ba-8b18-aa22b877e7b4" />
-<img width="3840" height="2160" alt="kmc_20251126_232741" src="https://github.com/user-attachments/assets/a45e8f75-75a6-4cb6-96d1-e6dd89ab1afa" />
-
