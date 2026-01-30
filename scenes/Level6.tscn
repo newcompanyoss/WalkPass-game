@@ -6,7 +6,7 @@
 [ext_resource path="res://scenes/Passkey6.tscn" type="PackedScene" id=4]
 [ext_resource path="res://fonts/Pixel.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://sprites/Walk Pass/levels/6.png" type="Texture" id=6]
-[ext_resource path="res://scenes/Player6.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/Player5.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/Wall Priz6.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/Enemy.tscn" type="PackedScene" id=10]
 
@@ -29,13 +29,13 @@ scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="TileMap"]
-margin_left = -272.0
-margin_top = 144.0
-margin_right = -128.0
-margin_bottom = 241.0
+margin_left = -299.0
+margin_top = 145.0
+margin_right = -155.0
+margin_bottom = 242.0
 rect_rotation = -0.285097
 custom_fonts/font = SubResource( 1 )
-text = "krfos._.art"
+text = "owl"
 align = 1
 valign = 1
 
@@ -54,7 +54,7 @@ position = Vector2( -80, 112 )
 [node name="Wall Priz6" parent="." instance=ExtResource( 9 )]
 position = Vector2( -144, 192 )
 
-[node name="Player6" parent="." instance=ExtResource( 8 )]
+[node name="Player5" parent="." instance=ExtResource( 7 )]
 position = Vector2( -112, 160 )
 
 [node name="Enemy1" parent="." instance=ExtResource( 10 )]

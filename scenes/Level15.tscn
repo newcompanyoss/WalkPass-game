@@ -32,13 +32,13 @@ scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="TileMap"]
-margin_left = -277.0
-margin_top = 157.0
-margin_right = -133.0
-margin_bottom = 247.0
+margin_left = -300.0
+margin_top = 155.0
+margin_right = -156.0
+margin_bottom = 245.0
 rect_rotation = -0.285097
 custom_fonts/font = SubResource( 1 )
-text = "flower_wew11"
+text = "_d.an4"
 align = 1
 valign = 1
 

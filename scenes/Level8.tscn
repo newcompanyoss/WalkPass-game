@@ -6,7 +6,7 @@
 [ext_resource path="res://sprites/Walk Pass/levels/8.png" type="Texture" id=4]
 [ext_resource path="res://fonts/Pixel.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://scenes/Wall Priz8.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/Player8.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/Player4.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/Enemy.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scripts/Level8.gd" type="Script" id=9]
 
@@ -35,7 +35,7 @@ margin_right = -144.0
 margin_bottom = 241.0
 rect_rotation = -0.285097
 custom_fonts/font = SubResource( 1 )
-text = "0_owero"
+text = "cv._16_"
 align = 1
 valign = 1
 
@@ -63,7 +63,7 @@ position = Vector2( -256, 96 )
 [node name="Wall Priz8" parent="." instance=ExtResource( 6 )]
 position = Vector2( -64, -96 )
 
-[node name="Player8" parent="." instance=ExtResource( 7 )]
+[node name="Player4" parent="." instance=ExtResource( 7 )]
 position = Vector2( -16, -32 )
 
 [node name="Enemy1" parent="." instance=ExtResource( 8 )]

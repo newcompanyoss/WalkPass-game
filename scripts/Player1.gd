@@ -1,6 +1,12 @@
 extends KinematicBody2D
 
 var has_key = false
+var is_moving = false
+var move_direction = Vector2.ZERO
+var target_position = Vector2.ZERO
+var move_speed = 10
+var input_timer = 0.0
+var input_interval = 0.15
 
 onready var ray = $RayCast2D
 
@@ -53,16 +59,45 @@ func _play_step_sound():
 	yield(get_tree().create_timer(0.05), "timeout")
 	audio_player.queue_free()
 
-func _unhandled_input(event):
-	for dir in inputs.keys():
-		if event.is_action_pressed(dir):
-			move(dir)
-	pass
+func _process(delta):
+	if is_moving:
+		position = position.move_toward(target_position, move_speed)
+		if position.distance_to(target_position) < 1:
+			position = target_position
+			is_moving = false
 	
+	input_timer += delta
+
+func _physics_process(delta):
+	if is_moving:
+		return
+	
+	var input_received = false
+	
+	if Input.is_action_pressed("ui_up") and input_timer >= input_interval:
+		input_received = true
+		move("ui_up")
+	elif Input.is_action_pressed("ui_down") and input_timer >= input_interval:
+		input_received = true
+		move("ui_down")
+	elif Input.is_action_pressed("ui_left") and input_timer >= input_interval:
+		input_received = true
+		move("ui_left")
+	elif Input.is_action_pressed("ui_right") and input_timer >= input_interval:
+		input_received = true
+		move("ui_right")
+	
+	if input_received:
+		input_timer = 0.0
+
 func move(dir):
+	if is_moving:
+		return
+	
 	var vector_pos = inputs[dir] * 16
 	ray.cast_to = vector_pos
 	ray.force_raycast_update()
 	if !ray.is_colliding():
-		position += vector_pos
+		target_position = position + vector_pos
+		is_moving = true
 		_play_step_sound()

@@ -9,6 +9,7 @@
 [node name="MobileControls" type="CanvasLayer" groups=["WalkPassMobile"]]
 pause_mode = 2
 layer = 0
+visible = false
 script = ExtResource( 2 )
 
 [node name="Up" type="TouchScreenButton" parent="."]

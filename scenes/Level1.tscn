@@ -6,7 +6,7 @@
 [ext_resource path="res://scenes/Wall Priz.tscn" type="PackedScene" id=4]
 [ext_resource path="res://fonts/Pixel.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://sprites/Walk Pass/levels/1.png" type="Texture" id=6]
-[ext_resource path="res://scenes/Player1.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/Player7.tscn" type="PackedScene" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 12
@@ -48,7 +48,7 @@ position = Vector2( 192, -16 )
 [node name="Passkey" parent="." instance=ExtResource( 2 )]
 position = Vector2( -32, 0 )
 
-[node name="Player1" parent="." instance=ExtResource( 12 )]
+[node name="Player7" parent="." instance=ExtResource( 7 )]
 position = Vector2( -32, 128 )
 
 [node name="Wall Priz" parent="." instance=ExtResource( 4 )]

@@ -21,6 +21,7 @@ var move_timer = 0.0
 var move_delay = 0.5  
 
 func _ready():
+	Global.last_scene_path = get_tree().current_scene.filename
 	print("Level 2")
 
 func _process(delta):
