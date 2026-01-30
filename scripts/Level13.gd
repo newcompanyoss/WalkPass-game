@@ -45,6 +45,7 @@ var enemy10_timer = 0.0
 var move_delay = 0.5
 
 func _ready():
+	Global.last_scene_path = get_tree().current_scene.filename
 	for i in range(14):
 		enemy1_pattern.append(Vector2.DOWN * 16)
 	for i in range(27):

@@ -3,7 +3,7 @@
 [ext_resource path="res://scenes/Passdoor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprites/Walk Pass/levels/4.png" type="Texture" id=2]
 [ext_resource path="res://scenes/TileMap.tres" type="TileSet" id=3]
-[ext_resource path="res://scenes/Player4.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Player8.tscn" type="PackedScene" id=4]
 [ext_resource path="res://fonts/Pixel.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://scenes/Passkey4.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/Wall Priz4.tscn" type="PackedScene" id=7]
@@ -53,7 +53,7 @@ position = Vector2( 176, 144 )
 [node name="Wall Priz4" parent="." instance=ExtResource( 7 )]
 position = Vector2( -288, 32 )
 
-[node name="Player4" parent="." instance=ExtResource( 4 )]
+[node name="Player8" parent="." instance=ExtResource( 4 )]
 position = Vector2( -256, -64 )
 
 [node name="Enemy1" parent="." instance=ExtResource( 8 )]

@@ -8,7 +8,7 @@
 [ext_resource path="res://scenes/Wall Priz9.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/Enemy.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scripts/Level9.gd" type="Script" id=8]
-[ext_resource path="res://scenes/Player1.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/Player7.tscn" type="PackedScene" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 size = 12
@@ -35,7 +35,7 @@ margin_right = -123.0
 margin_bottom = 242.0
 rect_rotation = -0.285097
 custom_fonts/font = SubResource( 1 )
-text = "SaifDeanAnYT"
+text = "mokahreb.exe"
 align = 1
 valign = 1
 
@@ -54,7 +54,7 @@ position = Vector2( -64, -48 )
 [node name="Wall Priz9" parent="." instance=ExtResource( 6 )]
 position = Vector2( 208, -64 )
 
-[node name="Player1" parent="." instance=ExtResource( 12 )]
+[node name="Player7" parent="." instance=ExtResource( 9 )]
 position = Vector2( -240, 144 )
 
 [node name="Enemy1" parent="." instance=ExtResource( 7 )]

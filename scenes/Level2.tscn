@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scenes/TileMap.tres" type="TileSet" id=1]
-[ext_resource path="res://scenes/Player2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Player3.tscn" type="PackedScene" id=2]
 [ext_resource path="res://fonts/Pixel.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://sprites/Walk Pass/levels/2.png" type="Texture" id=4]
 [ext_resource path="res://scenes/Passkey2.tscn" type="PackedScene" id=5]
@@ -34,7 +34,7 @@ margin_top = 160.0
 margin_right = -144.0
 margin_bottom = 225.0
 custom_fonts/font = SubResource( 1 )
-text = "brton._.a1"
+text = "jojooo0o0o"
 align = 1
 valign = 1
 
@@ -53,7 +53,7 @@ position = Vector2( 128, 128 )
 [node name="Wall Priz2" parent="." instance=ExtResource( 7 )]
 position = Vector2( -288, -32 )
 
-[node name="Player2" parent="." instance=ExtResource( 2 )]
+[node name="Player3" parent="." instance=ExtResource( 2 )]
 position = Vector2( -224, 64 )
 
 [node name="Enemy1" parent="." instance=ExtResource( 8 )]

@@ -65,6 +65,7 @@ var enemy18_timer = 0.0
 var move_delay = 0.5
 
 func _ready():
+	Global.last_scene_path = get_tree().current_scene.filename
 	enemy2_pattern.append(Vector2.LEFT * 16)
 	for i in range(2):
 		enemy2_pattern.append(Vector2.DOWN * 16)

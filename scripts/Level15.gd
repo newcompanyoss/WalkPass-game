@@ -18,3 +18,5 @@ func _process(delta):
 			
 			enemy.position += direction * speed * delta
 
+func _ready():
+	Global.last_scene_path = get_tree().current_scene.filename

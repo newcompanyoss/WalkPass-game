@@ -21,7 +21,10 @@ config/icon="res://sprites/Walk Pass/icons/Walk Pass/Walk Pass Game icon.png"
 Health="*res://scripts/Health.gd"
 AudioManager="*res://scripts/AudioManager.gd"
 FullScreen="*res://scripts/FullScreen.gd"
-WalkPassMobile="*res://scenes/Walk Pass Mobile.tscn"
+WalkPasseyeprotectionOn="*res://scenes/WalkPasseyeprotectionOn.tscn"
+WalkPassMobileOn="*res://scenes/WalkPassMobileOn.tscn"
+WalkPassMobile="res://scenes/Walk Pass Mobile.tscn"
+Global="*res://scripts/Global.gd"
 
 [display]
 

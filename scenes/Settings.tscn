@@ -1,8 +1,18 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scripts/Settings.gd" type="Script" id=1]
 [ext_resource path="res://sprites/Pass Wall/Pass Wall About Settings.png" type="Texture" id=2]
 [ext_resource path="res://sprites/Walk Pass/Menus/back.png" type="Texture" id=3]
+[ext_resource path="res://fonts/Pixel.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://sprites/Pass Man/passmanwhite.png" type="Texture" id=5]
+[ext_resource path="res://sprites/Walk Pass/icons/SaifDeanAllYT/SaifDeanAnYT/kmc_20250817_073058.png" type="Texture" id=6]
+[ext_resource path="res://sprites/Walk Pass/icons/New/1761861359504.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 41
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
 
 [node name="Settings" type="Control"]
 anchor_right = 1.0
@@ -14,6 +24,55 @@ position = Vector2( 640, 364 )
 scale = Vector2( 1, 1.01111 )
 texture = ExtResource( 2 )
 
+[node name="Passmanwhite" type="Sprite" parent="."]
+position = Vector2( 608, 50 )
+scale = Vector2( 3.32587, 1.87439 )
+texture = ExtResource( 5 )
+
+[node name="Passmanwhite2" type="Sprite" parent="."]
+position = Vector2( 727, 593.502 )
+scale = Vector2( 11, 2.3122 )
+texture = ExtResource( 5 )
+
+[node name="Passmanwhite3" type="Sprite" parent="."]
+position = Vector2( 1002.5, 486 )
+scale = Vector2( 17.8125, 2.3122 )
+texture = ExtResource( 5 )
+
+[node name="Passmanwhite4" type="Sprite" parent="."]
+position = Vector2( 727, 483 )
+scale = Vector2( 11.077, 2.3122 )
+texture = ExtResource( 5 )
+
+[node name="Passmanwhite5" type="Sprite" parent="."]
+position = Vector2( 255.5, 598 )
+scale = Vector2( 11.8125, 2.3122 )
+texture = ExtResource( 5 )
+
+[node name="SaifDeanAnYT" type="Sprite" parent="."]
+position = Vector2( 1203, 472 )
+scale = Vector2( 0.0601137, 0.0631769 )
+texture = ExtResource( 6 )
+
+[node name="New" type="Sprite" parent="."]
+position = Vector2( 1076.5, 367 )
+scale = Vector2( 0.133631, 0.137184 )
+texture = ExtResource( 7 )
+
+[node name="SoundButton" type="Button" parent="."]
+margin_left = 798.0
+margin_top = 8.0
+margin_right = 883.0
+margin_bottom = 91.0
+flat = true
+
+[node name="EyeProtectionButton" type="Button" parent="."]
+margin_left = 910.0
+margin_top = 8.0
+margin_right = 995.0
+margin_bottom = 91.0
+flat = true
+
 [node name="Button" type="Button" parent="."]
 margin_left = 960.0
 margin_top = 560.0
@@ -23,4 +82,93 @@ icon = ExtResource( 3 )
 flat = true
 expand_icon = true
 
+[node name="Ver" type="Label" parent="."]
+margin_left = 583.0
+margin_top = 35.0
+margin_right = 632.0
+margin_bottom = 77.0
+rect_scale = Vector2( 0.725868, 0.754387 )
+rect_pivot_offset = Vector2( 3.06873, 2.53558 )
+custom_colors/font_color = Color( 0.988235, 1, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "1.1"
+align = 1
+valign = 1
+
+[node name="owl" type="Label" parent="."]
+margin_left = 634.0
+margin_top = 463.0
+margin_right = 780.0
+margin_bottom = 595.0
+rect_scale = Vector2( 0.956246, 1.03439 )
+rect_pivot_offset = Vector2( 3.06873, 2.53558 )
+custom_colors/font_color = Color( 0, 1, 0.607843, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "owl
+
+"
+align = 1
+valign = 1
+
+[node name="cv_16_" type="Label" parent="."]
+margin_left = 646.0
+margin_top = 573.0
+margin_right = 804.0
+margin_bottom = 615.0
+rect_scale = Vector2( 0.956246, 0.994385 )
+rect_pivot_offset = Vector2( 3.06873, 2.53558 )
+custom_colors/font_color = Color( 1, 0, 0.952941, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "cv._16_"
+align = 1
+valign = 1
+
+[node name="_dan4" type="Label" parent="."]
+margin_left = 869.0
+margin_top = 458.0
+margin_right = 1027.0
+margin_bottom = 590.0
+rect_scale = Vector2( 0.956246, 1.03439 )
+rect_pivot_offset = Vector2( 3.06873, 2.53558 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "_d.an4
+
+"
+align = 1
+valign = 1
+
+[node name="jojooo0o0o" type="Label" parent="."]
+margin_left = 157.0
+margin_top = 582.0
+margin_right = 397.0
+margin_bottom = 624.0
+rect_scale = Vector2( 0.796247, 0.874385 )
+rect_pivot_offset = Vector2( 3.06873, 2.53558 )
+custom_colors/font_color = Color( 0, 0.580392, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "jojooo0o0o"
+align = 1
+valign = 1
+
+[node name="mokahrebexe" type="Label" parent="."]
+margin_left = 176.0
+margin_top = 501.0
+margin_right = 465.0
+margin_bottom = 543.0
+rect_scale = Vector2( 0.516247, 0.554386 )
+rect_pivot_offset = Vector2( 3.06873, 2.53558 )
+custom_colors/font_color = Color( 1, 0.952941, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "mokahreb.exe"
+align = 1
+valign = 1
+
+[connection signal="pressed" from="SoundButton" to="." method="_on_SoundButton_pressed"]
+[connection signal="pressed" from="EyeProtectionButton" to="." method="_on_EyeProtectionButton_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
